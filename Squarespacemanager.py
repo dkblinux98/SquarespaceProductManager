@@ -50,7 +50,7 @@ class SquarespaceManager:
 
         # Input email and password
         self.driver.find_element(By.NAME, "email").send_keys("<your email address>")
-        self.driver.find_element(By.NAME, "password").send_keys("<your password")
+        self.driver.find_element(By.NAME, "password").send_keys("<your password>")
         wait_seconds(2)
 
         # Click login
