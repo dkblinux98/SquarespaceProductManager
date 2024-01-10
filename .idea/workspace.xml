@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b97ce70-e1d1-437f-ba2e-560ea310443c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SquarespaceProductManager.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Squarespacemanager.py" beforeDir="false" afterPath="$PROJECT_DIR$/Squarespacemanager.py" afterDir="false" />
-    </list>
+    <list default="true" id="9b97ce70-e1d1-437f-ba2e-560ea310443c" name="Changes" comment="Reverted to proper chrome webdriver configuration." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -106,15 +98,28 @@
       <updated>1703343815053</updated>
       <workItem from="1703343821391" duration="26000" />
       <workItem from="1703724244111" duration="2495000" />
-      <workItem from="1704902670266" duration="1863000" />
+      <workItem from="1704902670266" duration="2212000" />
     </task>
+    <task id="LOCAL-00001" summary="Reverted to proper chrome webdriver configuration.">
+      <option name="closed" value="true" />
+      <created>1704905414689</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1704905414689</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Reverted to proper chrome webdriver configuration." />
+    <option name="LAST_COMMIT_MESSAGE" value="Reverted to proper chrome webdriver configuration." />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/SquarespaceProductManager$Squarespacemanager_IdeaProjects.coverage" NAME="Squarespacemanager_IdeaProjects Coverage Results" MODIFIED="1704905192326" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SquarespaceProductManager$Squarespacemanager_IdeaProjects.coverage" NAME="Squarespacemanager_IdeaProjects Coverage Results" MODIFIED="1704905237541" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/SquarespaceProductManager$Squarespacemanager.coverage" NAME="Squarespacemanager Coverage Results" MODIFIED="1704905139971" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
