@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/SquarespaceProductManager.iml" filepath="$PROJECT_DIR$/.idea/SquarespaceProductManager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SquarespaceProductManager.iml" filepath="$PROJECT_DIR$/SquarespaceProductManager.iml" />
     </modules>
   </component>
 </project>
