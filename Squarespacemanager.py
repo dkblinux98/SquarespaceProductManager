@@ -1,8 +1,8 @@
-import csv
-import time
-import datetime
-import os
-import configparser
+from csv import DictReader
+from time import sleep
+from datetime import datetime
+from os import path
+from configparser import ConfigParser
 
 from selenium import webdriver
 from selenium.webdriver import Keys
@@ -15,14 +15,14 @@ from selenium.webdriver.support.ui import WebDriverWait
 from webdriver_manager.chrome import ChromeDriverManager
 
 # Get the current time
-current_time = datetime.datetime.now()
+current_time = datetime.now()
 formatted_time = current_time.strftime("%H:%M:%S")
 
 
 # Utility Functions
 
 def wait_seconds(seconds_to_wait):
-    time.sleep(seconds_to_wait)
+    sleep(seconds_to_wait)
 
 
 # Main class
@@ -34,7 +34,7 @@ class SquarespaceManager:
         self.product_url = None
         self.reviews_blog_url = None
         self.driver = None
-        self.config_path = os.path.expanduser("~/.squarespacemanager/config.ini")
+        self.config_path = path.expanduser("~/.squarespacemanager/config.ini")
         self.product_title = None
         self.product_sku = None
         self.product_author = None
@@ -56,7 +56,7 @@ class SquarespaceManager:
         self.driver.maximize_window()
 
     def load_config(self):
-        config = configparser.ConfigParser()
+        config = ConfigParser()
         config.read(self.config_path)
         self.email = config.get("Credentials", "email")
         self.password = config.get("Credentials", "password")
@@ -69,7 +69,7 @@ class SquarespaceManager:
         wait_seconds(2)
 
         # Click Squarespace Log In button on Home Page
-        self.driver.find_element(By.CLASS_NAME, "www-navigation__desktop__account-info__login-button").click()
+        self.driver.find_element(By.CLASS_NAME, "global-navigation__account-login-text").click()
         wait_seconds(2)
 
         # Input email and password
@@ -932,7 +932,7 @@ class SquarespaceManager:
     def update_products_from_csv(self):
         csv_file_path = "/Users/darlabaker/Desktop/dpp-product-list.csv"
         with open(csv_file_path, newline='', encoding='utf-8') as csvfile:
-            reader = csv.DictReader(csvfile)
+            reader = DictReader(csvfile)
 
             for row in reader:
                 self.product_sku = row['SKU']
@@ -944,7 +944,7 @@ class SquarespaceManager:
                 self.page_editorial_review = row['Review']
 
                 # Get the current time
-                current_time = datetime.datetime.now()
+                current_time = datetime.now()
                 formatted_time = current_time.strftime("%H:%M:%S")
                 print("Current time:", formatted_time)
                 print(f"Updating product: {self.product_title}")
@@ -967,7 +967,7 @@ class SquarespaceManager:
                 self.save_work()
 
 
-                current_time = datetime.datetime.now()
+                current_time = datetime.now()
                 formatted_time = current_time.strftime("%H:%M:%S")
                 print("Current time:", formatted_time)
                 print(f"Updated product: {self.product_title}")
