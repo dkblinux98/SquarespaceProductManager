@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "squarespace-manager"
+version = "0.1.0"
+description = "Automate Squarespace product updates with Selenium"
+authors = [{name="Darla Baker"}]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "selenium>=4.24",
+  "webdriver-manager>=4.0.2",
+  "python-dotenv>=1.0.1"
+]
+
+[project.scripts]
+sqsp = "squarespace_manager.cli:main"
