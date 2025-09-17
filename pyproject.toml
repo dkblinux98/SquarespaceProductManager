@@ -3,9 +3,9 @@ requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "squarespace-manager"
+name = "SquarespaceProductManager"
 version = "0.1.0"
-description = "Automate Squarespace product updates with Selenium"
+description = "Automate Squarespace updates with Selenium"
 authors = [{name="Darla Baker"}]
 readme = "README.md"
 requires-python = ">=3.10"

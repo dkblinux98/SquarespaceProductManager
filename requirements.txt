@@ -1,5 +1,0 @@
-python-dotenv
-configparser
-selenium
-webdriver-manager
-
